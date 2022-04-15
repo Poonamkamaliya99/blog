@@ -32,7 +32,7 @@
                   {% if blog.image %}
                   <img src=" {{ blog.image.url}}" class="img-fluid"  alt="..."> 
 
-                  <img src="{{ blog.image1.url}}" class="d-block w-100"  alt="..."> 
+                  {% comment %} <img src="{{ blog.image1.url}}" class="d-block w-100"  alt="...">  {% endcomment %}
 
                   {% endif %}
 

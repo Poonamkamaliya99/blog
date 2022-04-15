@@ -35,7 +35,7 @@ class Blog(models.Model):
    
 
     title=models.CharField(max_length=100, default="")
-    thought=models.CharField(max_length=100, default="")
+    thought=models.TextField( default="")
 
     desc=HTMLField()
     desc1=HTMLField(default="")
@@ -46,8 +46,8 @@ class Blog(models.Model):
 
     # tag = models.ForeignKey(Tag, null=True, blank=True, on_delete=models.CASCADE)
 
-    # image = models.ImageField( upload_to='image/', default="")
-    image = models.CharField(max_length=100, default="",blank=True,null=True)
+    image = models.ImageField( upload_to='image/', default="")
+    # image = models.CharField(max_length=100, default="",blank=True,null=True)
     # image1 = models.ImageField( upload_to='image/', default="")
 
     v = models.IntegerField(default=0 ,blank=True, null=True)
